@@ -46,19 +46,19 @@ spec:
               path: "/startup"
               port: 8080
             periodSeconds: 5
-            failureThreshold: 36
+            failureThreshold: 48
           readinessProbe:
             httpGet:
               path: "/readiness"
               port: 8080
             periodSeconds: 10
-            failureThreshold: 3
+            failureThreshold: 5
           livenessProbe:
             httpGet:
               path: "/liveness"
               port: 8080
             periodSeconds: 10
-            failureThreshold: 3
+            failureThreshold: 5
           resources:
             requests:
               memory: "100Mi"
