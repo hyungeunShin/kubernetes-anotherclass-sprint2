@@ -47,7 +47,7 @@ spec:
               path: "/startup"
               port: 8080
             periodSeconds: 5
-            failureThreshold: 24
+            failureThreshold: 48
           readinessProbe:
             httpGet:
               path: "/readiness"
